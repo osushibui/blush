@@ -10,7 +10,7 @@ module.exports = function (client) {
             
             const embed = new Discord.RichEmbed()
             .setTitle("New Report")
-            .addField("Text", "```"+message.content+"````")
+            .addField("Text", "```"+message.content+"```")
             client.channels.get(config.bot.staff_general).send(embed)
         }
     })
