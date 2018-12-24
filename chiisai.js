@@ -23,5 +23,5 @@ client.on('ready', () => {
 // Check if any naughty words are in the bot.
 require("./handlers/noBadWordsCheck")(client)
 require("./cmd/addWordsToBadWordList")(client)
-
+require("./cmd/removeWordsFromBadWordList")(client)
 //

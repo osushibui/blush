@@ -9,14 +9,13 @@ module.exports = function(client) {
             msg = msg.split(config.bot.prefix + "nazi remove ");
             console.log(msg)
             msg = msg[1];
-
-            global.naughtyWords.splice(msg);
+            global.naughtyWords = global.naughtyWords.filter(e => e !== msg);
             console.log(global.naughtyWords)
             config.blacklisted_words = global.naughtyWords;
             fs.writeFile('config.json', JSON.stringify(config, null, 2), function(err) {
                 if (err) throw err;
             })
-            return message.channel.send("Added!")
+            return message.channel.send(`Removed ${msg} from blacklist!`)
         }
     })
 }
