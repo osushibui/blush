@@ -1,4 +1,4 @@
-process.setMaxListeners(0);
+require('events').EventEmitter.prototype._maxListeners = 100;
 
 const config = require("./config.json");
 const Discord = require("discord.js");
