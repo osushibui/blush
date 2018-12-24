@@ -24,4 +24,10 @@ client.on('ready', () => {
 require("./handlers/noBadWordsCheck")(client)
 require("./cmd/addWordsToBadWordList")(client)
 require("./cmd/removeWordsFromBadWordList")(client)
-//
+// User Stuff
+require("./cmd/getUserRecentScore")(client)
+require("./cmd/getUserRecentScoreRelax")(client)
+require("./cmd/getUserTopScore")(client)
+require("./cmd/getUserTopScoreRelax")(client)
+require("./cmd/getUserStats")(client)
+require("./cmd/getUserStatsRelax")(client)
