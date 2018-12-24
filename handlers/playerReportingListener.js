@@ -12,6 +12,7 @@ module.exports = function (client) {
             .setTitle("New Report")
             .addField("Text", "```"+message.content+"```")
             client.channels.get(config.bot.staff_general).send(embed)
+            message.delete();
         }
     })
 }
