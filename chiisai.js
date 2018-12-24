@@ -31,3 +31,8 @@ require("./cmd/getUserTopScore")(client)
 require("./cmd/getUserTopScoreRelax")(client)
 require("./cmd/getUserStats")(client)
 require("./cmd/getUserStatsRelax")(client)
+// Information
+require("./cmd/faq")(client)
+// Player Reporting
+require("./cmd/pr")(client)
+require("./handlers/playerReportingListener")(client)

@@ -2,11 +2,9 @@
     "bot": {
         "token": "",
         "player-reports": "",
-        "bunk": "",
-        "community-managers": "",
-        "staff-general": "",
+        "staff_general": "",
+        "owner_id": "",
         "announcements": "",
-        "info": "",
         "general": "",
         "game": "osu!",
         "prefix": ""
