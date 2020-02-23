@@ -21,9 +21,10 @@ module.exports = function (client) {
                     .setURL("https://shibui.pw/u/" + recentScore[0].userid)
                     .setColor(hex)
                     .setDescription(recentScore[0].song_name)
-                    .setImage("https://assets.ppy.sh/beatmaps/" + recentScore[0].beatmapset_id + "/covers/cover.jpg")
-                    .addField("PP:", Math.round(recentScore[0].pp / 100) * 100)
                     .addField("Accuracy:", Math.round(recentScore[0].accuracy / 100) * 100 + "%")
+                    .addField("Misses:", recentScore[0].misses_count)
+                    .addField("PP:", Math.round(recentScore[0].pp / 100) * 100)
+                    .setImage("https://assets.ppy.sh/beatmaps/" + recentScore[0].beatmapset_id + "/covers/cover.jpg")
                 message.channel.send(embed);
             } catch (ex) {
                 message.channel.send("User doesnt exist");
