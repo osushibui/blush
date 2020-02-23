@@ -6,13 +6,13 @@ This bot is forked from osuYozora, though it has heavy changes.
 
 Commands:
 
-(prefix)recent (vanilla/relax) (username)
+(prefix)recent (reg/rx) (username)
 Returns recent score for user given
 
-(prefix)top (vanilla/relax) (username)
+(prefix)top (reg/rx) (username)
 Returns top score for user given
 
-(prefix)stats (vanilla/relax) (username)
+(prefix)stats (reg/rx) (username)
 Returns stats for user given
 
 (prefix)faq (type)
