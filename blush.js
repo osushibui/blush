@@ -18,7 +18,6 @@ client.on('ready', () => {
             name: config.bot.game
         }
      });
-     client.channels.get(config.bot.general).send(`Blush started successfully with ${client.users.size} users in Shibui's discord.`)
 });
 
 

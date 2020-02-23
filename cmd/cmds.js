@@ -18,12 +18,12 @@ module.exports = function (client) {
                 embed.setTitle("Help (Commands)")
                 .setDescription("Do <command> to use them.")
                 .addField("FAQ (faq help)", "Contains help to some general connection issues and contact to staff.")
-                .addField("Top Relax Score (by user) (top rx <user>)", "Shows a certain user's top play on their relax profile.")
-                .addField("Top Relax Score (by user) (top reg <user>)", "Shows a certain user's top play on their vanilla profile.")
-                .addField("View Player's Relax Stats (stats rx <user>)", "Shows a certain user's total pp on relax.")
-                .addField("View Player's Vanilla Stats (stats reg <user>)", "Shows a certain user's total pp on vanilla.")
-                .addField("View Player's Most Recent Relax Score (recent rx <user>)", "Shows their most recent relax score (includes retries)")
-		            .addField("View Player's Most Recent Vanilla Score (recent reg <user>)", "Shows their most recent vanilla score (includes retries)")
+                .addField("top rx <user>", "Shows a certain user's top play on their relax profile.")
+                .addField("top reg <user>", "Shows a certain user's top play on their vanilla profile.")
+                .addField("stats rx <user>", "Shows a certain user's total pp on relax.")
+                .addField("stats reg <user>", "Shows a certain user's total pp on vanilla.")
+                .addField("recent rx <user>", "Shows their most recent relax score (includes retries)")
+		.addField("recent reg <user>", "Shows their most recent vanilla score (includes retries)")
                 .addField("help", "Shows this")
 		message.channel.send(embed);
 	}
