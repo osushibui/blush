@@ -15,20 +15,20 @@ module.exports = function (client) {
             let hex = parseInt(color.replace(/^#/, ''), 16);
             const embed = new Discord.RichEmbed()
                 .setColor(hex)
-                .setImage("https://yozora.pw/images/logos/circle.png")
+                .setImage("https://avatars2.githubusercontent.com/u/61318798?s=200&v=4")
 
             if (msg.toLowerCase() == "email") {
                 embed.setTitle("Email Verification")
-                .addField("**Description**", "As the verification page says, Yozora does not use verification emails. To verify your account, simply install the switcher, install the certificate, click the server you\'d like to play on, and click On/Off, then login to osu! to complete the verification process.")
+                .addField("**Description**", "As most people may know, Shibui, and many other servers do not accept email verification. You can find how to connect and verify your account on Shibui at https://shibui.pw/connect.")
             } else if (msg.toLowerCase() == "appeals") {
                 embed.setTitle("Appealing Your Restriction")
-                .addField("**Description**", "Yozora accepts restriction appeals within 1 (one) month of restriction. Although staff are very confident in their decision when restricting users they are willing to accept proof of legitimacy if it was in error.")
+                .addField("**Description**", "Shibui accepts restriction appeals within 1 (one) month of restriction. Although staff are very confident in their decision when restricting users they are willing to accept proof of legitimacy if it was in error.")
             } else if (msg.toLowerCase() == "contact") {
-                embed.setTitle("Contacting Yozora's Staff")
-                .addField("**Description**", "Depending on the situation there's many ways to contact the Yozora staff (email, discord). The main email for support is support@yozora.pw, however you can message a Community Manager (or Owner) in-game or on discord if the issue is urgent or not about restrictions.")
+                embed.setTitle("Contacting Staff")
+                .addField("**Description**", "Depending on the situation there's many ways to contact the Shibui staff (discord, in-game). The most reliable way of getting in contact with staff is to message a Community Manager (or Owner) in-game or on discord if the issue is urgent or not about restrictions.")
             } else if (msg.toLowerCase() == "cert") {
-                embed.setTitle("'Connection failed. Retrying in 30s' while connecting to Yozora")
-                .addField("**Description**", "This usually means that the certificate was not installed correctly. Check the pinned messages within #help, download the cert.crt file and click install certificate, set the store location to Local Machine, Place all certificates in the following store, click browse and choose Trusted Root Certification Authorities. Then next and finish.")
+                embed.setTitle("'Connection failed. Retrying in 30s'")
+                .addField("**Description**", "This usually means that the certificate was not installed correctly. Check the pinned messages in #general, download the cert.crt file and click install certificate, set the store location to Local Machine, Place all certificates in the following store, click browse and choose Trusted Root Certification Authorities. Then next and finish. All you need to do after that is restart osu! and then log in.")
             } else if (msg.toLowerCase() == "hosts") {
                 embed.setTitle("Hosts File Error")
                 .addField("**Description**", "If the switcher says it is in read only, or you are still connected to bancho (or another server), open C:\Windows\System32\drivers\etc\hosts with notepad (running as admin) and go to https://ip.yozora.pw/hosts.txt and copy paste the text that you get from there into the hosts file and save it.")
@@ -39,15 +39,15 @@ module.exports = function (client) {
                 embed.setTitle("FAQ Help")
                 .setDescription("Do !faq (field title) to use it.")
                 .addField("Email", "Explains why you haven't recieved the email verification :facepalm:")
-                .addField("Appeals", "Explains how appeals works within osu!Yozora")
-                .addField("Contact", "Lists ways to contact the osu!Yozora staff")
-                .addField("Cert", "How to insstall the certificate manually")
-                .addField("Hosts", "How to edit hosts file manually.")
-                .addField("linux/mac", "How to connect on linux or mac.")
+                .addField("Appeals", "Explains how appeals works within Shibui")
+                .addField("Contact", "Lists ways to contact the Shibui staff")
+                .addField("Cert", "How to install the certificate manually")
+                .addField("Hosts", "How to edit hosts file manually")
+                .addField("linux/mac", "How to connect on linux or mac")
                 .addField("help", "Shows this")
 
             } else {
-                return message.channel.send("This is not a valid option, maybe try $faq help?") 
+                return message.channel.send("This is not a valid option, maybe try >faq help?") 
             }
             return message.channel.send(embed)
         }
