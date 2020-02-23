@@ -17,9 +17,9 @@ module.exports = function (client) {
                 let hex = parseInt(color.replace(/^#/, ''), 16);
                 const embed = new Discord.RichEmbed()
                     .setTitle("Stats for " + msg)
-                    .setURL("https://yozora.pw/u/" + user[0].id)
+                    .setURL("https://shibui.pw/u/" + user[0].id)
                     .setColor(hex)
-                    .setThumbnail("https://a.yozora.pw/" + user[0].id)
+                    .setThumbnail("https://a.shibui.pw/" + user[0].id)
                     .addField("Performance (Standard)", userStats[0].pp_std_rx, true)
                     .addField("Performance (Mania)", userStats[0].pp_mania_rx, true)
                     .addField("Performance (Taiko)", userStats[0].pp_taiko_rx, true)
@@ -28,7 +28,7 @@ module.exports = function (client) {
                     
                     message.channel.send(embed)
             } catch (ex) {
-                message.channel.send("user doesnt exist");
+                message.channel.send("User doesnt exist");
             }
         }
     })
