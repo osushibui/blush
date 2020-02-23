@@ -9,7 +9,7 @@ module.exports = function (client) {
             let hex = parseInt(color.replace(/^#/, ''), 16);
             
             const embed = new Discord.RichEmbed()
-            .setTitle("Welcome To the Player Reporting Channel")
+            .setTitle("Hello, and thank you for reporting a cheater to us.")
             .addField("Information", "Please stick to the format below when reporting and **do not** tag admins here.")
             .addField("Format", "```\nPlayer's username:\nLink to Player's Profile:\nReason for Reporting Player (cheating, multi-accounting):\nEvidence:```")
             message.channel.send(embed)
