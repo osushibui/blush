@@ -1,5 +1,6 @@
 # Blush
 The in-game-integration bot for the Shibui discord.
+
 This bot is forked from osuYozora, though it has heavy changes.
 
 
