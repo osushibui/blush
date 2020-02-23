@@ -10,7 +10,7 @@ module.exports = function (client) {
             let hex = parseInt(color.replace(/^#/, ''), 16);
             
             const embed = new Discord.RichEmbed()
-            .setTitle("New Report")
+            .setTitle("Player Report")
             .addField("Text", "```"+message.content+"```")
             client.channels.get(config.bot.staff_general).send(embed)
             message.delete();
