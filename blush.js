@@ -11,14 +11,14 @@ global.naughtyWords = config.blacklisted_words;
 
 
 client.on('ready', () => {
-    console.log(`Chiissai has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
+    console.log(`Blush has started, monitoring ${client.users.size} users.`); 
     client.user.setPresence({ 
-        status: 'online', 
+        status: 'dnd', 
         game: { 
             name: config.bot.game
         }
      });
-     client.channels.get(config.bot.general).send(`Chiissai has started, with ${client.users.size} users in the Yozora discord.`)
+     client.channels.get(config.bot.general).send(`Blush started successfully with ${client.users.size} users in Shibui's discord.`)
 });
 
 
