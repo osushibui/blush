@@ -1,5 +1,6 @@
-# chiisai
-The discord bot for osu!Yozora
+# Blush
+The in-game-integration bot for the Shibui discord.
+This bot is forked from osuYozora, though it has heavy changes.
 
 
 Commands:
@@ -16,14 +17,14 @@ Returns stats for user given
 (prefix)faq (type)
 Returns FAQ information for type.
 
-
-Installing:
+!! THIS BOT MAY NOT FUNCTION AS SHOWN. USE AT YOUR OWN RISK. !!
+Installation
 
 ```
-git clone https://github.com/osuYozora/chiisai
-cd chiisai
+git clone https://github.com/osushibui/blush
+cd blush
 npm install
 cp config.sample.json config.json
-nano config.json
-node chiisai.js
+nano config.json (do your edits, like token, etc)
+node blush.js
 ```
