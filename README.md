@@ -18,6 +18,7 @@ Returns stats for user given
 Returns FAQ information for type.
 
 !! THIS BOT MAY NOT FUNCTION AS SHOWN. USE AT YOUR OWN RISK. !!
+
 Installation
 
 ```
