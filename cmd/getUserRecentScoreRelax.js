@@ -5,9 +5,9 @@ const config = require("../config.json")
 
 module.exports = function (client) {
     client.on("message", async message => {
-        if (message.content.startsWith(config.bot.prefix + "recent relax")) {
+        if (message.content.startsWith(config.bot.prefix + "recent rx")) {
             var msg = message.content;
-            msg = msg.split(config.bot.prefix + "recent relax ");
+            msg = msg.split(config.bot.prefix + "recent rx ");
             msg = msg[1];
 
             try {
