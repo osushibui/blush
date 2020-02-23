@@ -1,3 +1,9 @@
+const config = require("../config.json");
+const fs = require('fs');
+
+module.exports = function(client) {
+    client.on('message', async message => {
+        
 if(command === "ban") {
     if(!message.member.roles.some(r=>["Administrator"].includes(r.name)) )
       return message.reply("Sorry, you don't have permissions to use this!");
@@ -15,3 +21,6 @@ if(command === "ban") {
       .catch(error => message.reply(`Sorry ${message.author} I couldn't ban because of : ${error}`));
     message.reply(`${member.user.tag} has been banned by ${message.author.tag} because: ${reason}`);
   }
+        
+    })
+}
