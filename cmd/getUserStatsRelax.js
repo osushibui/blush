@@ -11,7 +11,7 @@ module.exports = function (client) {
             msg = msg[1];
             try {
                 var user = await query("SELECT * FROM users WHERE username = ?", msg);
-                var userStats = await query("SELECT * FROM users_stats WHERE username = ?", msg);
+                var userStats = await query("SELECT * FROM rx_stats WHERE username = ?", msg);
 
                 let color = randomcolor_1.randomColor();
                 let hex = parseInt(color.replace(/^#/, ''), 16);
@@ -20,10 +20,9 @@ module.exports = function (client) {
                     .setURL("https://shibui.pw/u/" + user[0].id)
                     .setColor(hex)
                     .setThumbnail("https://a.shibui.pw/" + user[0].id)
-                    .addField("Performance (Standard)", userStats[0].pp_std_rx, true)
-                    .addField("Performance (Mania)", userStats[0].pp_mania_rx, true)
-                    .addField("Performance (Taiko)", userStats[0].pp_taiko_rx, true)
-                    .addField("Performance (Catch The Beat)", userStats[0].pp_ctb_rx, true)
+                    .addField("Performance (Standard)", userStats[0].pp_std, true)
+                    .addField("Performance (Taiko)", userStats[0].pp_taiko, true)
+                    .addField("Performance (Catch The Beat)", userStats[0].pp_ctb, true)
                     .addField("Country", userStats[0].country)
                     
                     message.channel.send(embed)
