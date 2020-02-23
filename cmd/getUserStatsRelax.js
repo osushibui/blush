@@ -5,9 +5,9 @@ const config = require("../config.json")
 
 module.exports = function (client) {
     client.on("message", async message => {
-        if (message.content.startsWith(config.bot.prefix + "stats relax")) {
+        if (message.content.startsWith(config.bot.prefix + "stats rx")) {
             var msg = message.content;
-            msg = msg.split(config.bot.prefix + "stats relax ");
+            msg = msg.split(config.bot.prefix + "stats rx ");
             msg = msg[1];
             try {
                 var user = await query("SELECT * FROM users WHERE username = ?", msg);
