@@ -24,6 +24,7 @@ module.exports = function (client) {
                     .addField("PP:", Math.round(recentScore[0].pp * 100) / 100)
                     .addField("Score:", recentScore[0].score)
 		    .addField("Accuracy:", Math.round(recentScore[0].accuracy) + "%")
+		    .addField("Combo:", recentScore[0].max_combo)
 		    .addField("PP:", Math.round(recentScore[0].pp * 100) / 100)
 		   .setImage("https://assets.ppy.sh/beatmaps/" + recentScore[0].beatmapset_id + "/covers/cover.jpg")
                 message.channel.send(embed);
