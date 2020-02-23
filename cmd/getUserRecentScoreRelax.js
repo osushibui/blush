@@ -22,7 +22,7 @@ module.exports = function (client) {
                     .setColor(hex)
                     .setDescription(recentScore[0].song_name)
                     .setImage("https://assets.ppy.sh/beatmaps/" + recentScore[0].beatmapset_id + "/covers/cover.jpg")
-                    .addField("PP:", recentScore[0].pp)
+                    .addField("PP:", Math.round(recentScore[0].pp / 100) * 100)
                     .addField("Accuracy:", Math.round(recentScore[0].accuracy / 100) * 100 + "%")
                 message.channel.send(embed);
             } catch (ex) {
