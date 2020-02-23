@@ -4,11 +4,11 @@ const fs = require('fs');
 module.exports = function(client) {
     client.on('message', async message => {
         
-        if (message.content.startsWith(config.bot.prefix + "nazi add")) {
-            if (message.member.id != config.bot.owner_id) { return message.channel.send("This is reserved for ilyt, sorry!") }
+        if (message.content.startsWith(config.bot.prefix + "wordlist add")) {
+            if (message.member.id != config.bot.owner_id) { return message.channel.send("Only Community Managers and up can use this command.") }
             // Please make a PR and help me fix this
             var msg = message.content;
-            msg = msg.split(config.bot.prefix + "nazi add ");
+            msg = msg.split(config.bot.prefix + "wordlist add ");
             console.log(msg)
             msg = msg[1];
 
@@ -17,7 +17,7 @@ module.exports = function(client) {
             fs.writeFile('config.json', JSON.stringify(config, null, 2), function(err) {
                 if (err) throw err;
             })
-            return message.channel.send("Added!")
+            return message.channel.send("Added.")
         }
     })
 }
