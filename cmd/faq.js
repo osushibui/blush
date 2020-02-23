@@ -15,7 +15,6 @@ module.exports = function (client) {
             let hex = parseInt(color.replace(/^#/, ''), 16);
             const embed = new Discord.RichEmbed()
                 .setColor(hex)
-                .setImage("https://avatars2.githubusercontent.com/u/61318798?s=200&v=4")
 
             if (msg.toLowerCase() == "email") {
                 embed.setTitle("Email Verification")
