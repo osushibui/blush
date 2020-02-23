@@ -17,7 +17,7 @@ module.exports = function (client) {
 
                 const embed = new Discord.RichEmbed()
                     .setTitle("Recent Score For " + msg)
-                    .setURL("https://yozora.pw/u/" + recentScore[0].userid)
+                    .setURL("https://shibui.pw/u/" + recentScore[0].userid)
                     .setColor(hex)
                     .setDescription(recentScore[0].song_name)
                     .setImage("https://assets.ppy.sh/beatmaps/" + recentScore[0].beatmapset_id + "/covers/cover.jpg")
@@ -26,7 +26,7 @@ module.exports = function (client) {
                     .addField("Accuracy:", Math.round(recentScore[0].accuracy) + "%")
                 message.channel.send(embed);
             } catch (ex) {
-                message.channel.send("user doesnt exist");
+                message.channel.send("User doesnt exist");
             }
         }
     })
