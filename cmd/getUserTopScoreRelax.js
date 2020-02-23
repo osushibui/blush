@@ -5,9 +5,9 @@ const config = require("../config.json")
 
 module.exports = function (client) {
     client.on("message", async message => {
-        if (message.content.startsWith(config.bot.prefix + "top relax")) {
+        if (message.content.startsWith(config.bot.prefix + "top rx")) {
             var msg = message.content;
-            msg = msg.split(config.bot.prefix + "top relax ");
+            msg = msg.split(config.bot.prefix + "top rx ");
             msg = msg[1];
             try {
                 var user = await query("SELECT * FROM users WHERE username = ?", msg);
@@ -17,12 +17,11 @@ module.exports = function (client) {
                 
                 const embed = new Discord.RichEmbed()
                     .setTitle("Top Score For " + msg)
-                    .setURL("https://yozora.pw/u/" + recentScore[0].userid)
+                    .setURL("https://shibui.pw/u/" + recentScore[0].userid)
                     .setColor(hex)
                     .setDescription(recentScore[0].song_name)
                     .setImage("https://assets.ppy.sh/beatmaps/" + recentScore[0].beatmapset_id + "/covers/cover.jpg")
                     .addField("PP:", recentScore[0].pp)
-                    .addField("Score:", recentScore[0].score)
                     .addField("Accuracy:", Math.round(recentScore[0].accuracy) + "%")
                 message.channel.send(embed);
             } catch (ex) {
