@@ -32,7 +32,6 @@ require("./cmd/getUserTopScore")(client)
 require("./cmd/getUserTopScoreRelax")(client)
 require("./cmd/getUserStats")(client)
 require("./cmd/getUserStatsRelax")(client)
-require("./cmd/kickUser")(client)
 require("./cmd/banUser")(client)
 require("./cmd/purgeChat")(client)
 // Information
