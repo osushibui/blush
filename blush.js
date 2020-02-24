@@ -41,3 +41,5 @@ require("./handlers/playerReportingListener")(client)
 // Requests
 require("./cmd/rqs")(client)
 require("./handlers/uploadRequestsListener")(client)
+// Announcements
+require("./handlers/announcementsListener")(client)
