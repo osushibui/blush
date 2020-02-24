@@ -38,3 +38,6 @@ require("./cmd/cmds")(client)
 // Player Reporting
 require("./cmd/pr")(client)
 require("./handlers/playerReportingListener")(client)
+// Requests
+require("./cmd/rqs")(client)
+require("./handlers/uploadRequestsListener")(client)
