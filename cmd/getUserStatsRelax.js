@@ -12,7 +12,7 @@ module.exports = function (client) {
             try {
                 var user = await query("SELECT * FROM users WHERE username = ?", msg);
                 var userStats = await query("SELECT * FROM rx_stats WHERE username = ?", msg);
-		var userStatsReg = await query("SELECT * FROM users_stats WHERE username = ?", msg);
+                var userStatsReg = await query("SELECT * FROM users_stats WHERE username = ?", msg);
 
                 let color = randomcolor_1.randomColor();
                 let hex = parseInt(color.replace(/^#/, ''), 16);
