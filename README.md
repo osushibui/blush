@@ -18,6 +18,9 @@ Returns stats for user given
 (prefix)faq (type)
 Returns FAQ information for type.
 
+(prefix)help
+Displays all available commands.
+
 !! THIS BOT MAY NOT FUNCTION AS SHOWN. USE AT YOUR OWN RISK. !!
 
 Installation
