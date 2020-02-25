@@ -12,7 +12,7 @@ module.exports = function (client) {
             const embed = new Discord.RichEmbed()
             .setTitle("New Upload Request!")
             .addField("Text", "```"+message.content+"```")
-            client.channels.get(config.bot.staff_general).send(embed)
+            client.channels.get(config.bot.requests).send(embed)
             message.delete();
         }
     })
