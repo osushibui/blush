@@ -12,7 +12,7 @@ module.exports = function (client) {
             const embed = new Discord.RichEmbed()
             .setTitle("Player Report")
             .addField("Text", "```"+message.content+"```")
-            client.channels.get(config.bot.reports).send(embed)
+            client.channels.get(config.bot.report).send(embed)
             message.delete();
         }
     })
