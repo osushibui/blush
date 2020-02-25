@@ -8,8 +8,8 @@
         "owner_id": "",
         "announcements": "",
         "general": "",
-	      "reports": "",
-	      "uploads": "",
+	"report": "",
+	"upload": "",
         // 'Playing' custom status on discord bot
         "game": "shibui.pw (prefix is -)",
         // Commands prefix
