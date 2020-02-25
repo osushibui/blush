@@ -1,0 +1,25 @@
+{
+    "bot": {
+        // Discord Token
+        "token": "",
+        // Copy ID of text channels
+        "player-reports": "",
+        "staff_general": "",
+        "owner_id": "",
+        "announcements": "",
+        "general": "",
+	      "reports": "",
+	      "uploads": "",
+        // 'Playing' custom status on discord bot
+        "game": "shibui.pw (prefix is -)",
+        // Commands prefix
+        "prefix": "-"
+    },
+    "db": {
+        "host": "localhost",
+		"username": "root",
+		"password": "",
+		"database": "ripple"
+    },
+    "blacklisted_words": ["words", "here"]
+}
