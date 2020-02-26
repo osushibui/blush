@@ -21,7 +21,7 @@ Returns FAQ information for type.
 (prefix)help
 Displays all available commands.
 
-!! THIS BOT MAY NOT FUNCTION AS SHOWN. USE AT YOUR OWN RISK. !!
+This bot was created for osu!Shibui. It may not work on other discords.
 
 Installation
 
